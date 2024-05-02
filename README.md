@@ -1,4 +1,4 @@
-1. How to run the project locally using docker
+**1. How to run the project locally using docker**
 
 build:
 docker build . -t test -f dockerfile
@@ -22,8 +22,7 @@ set docker_machine_name=default
 
 set docker_tls_verify=1
 
-2.What was the major issue that you
-had and how did you solve it
+**2.What was the major issue that you had and how did you solve it**
 
 Error i got :
 
@@ -45,8 +44,7 @@ solution: By default, docker container will exit immediately if you do not have 
 To keep the container running in the background, try to run it with --interactive (or -i) argument or --tty (or -t) or -it directly
 
 
-3. How you envision multiple
-environments being deployed?
+**3. How you envision multiple environments being deployed?**
 
 Deploying multiple environments typically involves setting up separate instances or configurations of an application or system to facilitate development, testing, staging, and production. Here's a general overview of how this might be done:
 
@@ -57,8 +55,7 @@ Staging: Once developers are satisfied with their code and consider it fairly st
 
 Production: Once the code has been thoroughly tested, it is then pushed to production where it is made available to end-users.
 
-4. How you envision the workflow of
-the project
+**4. How you envision the workflow of the project**
 
 1. Approach with Attention
 Before asking the first question that pops into your head, start writing them down. Prepare questions that revolve around what feedback you will take, from whom, and when.
@@ -73,16 +70,14 @@ Our minds go blank when we’re asked broad or vague questions without a set clu
 Honest feedback might trigger you at first, but you should contain yourself and listen without interrupting. Also, calmly ask questions to clarify the reasons behind the feedback.
 
 
-5. What alternative you might propose
-for env variables management
+**5. What alternative you might propose for env variables management**
 
 The only other solution is to put all files in the same directory as the executable, so that the path is not required for accessing the files. Or define a shortcut for the executable with a default path name.
 
 This solution is used by many applications, for exactly this reason : avoid adding themselves to the PATH.
 
 
-6. How you would improve availability
-in a production environment
+**6. How you would improve availability in a production environment**
 
 1. Define availability requirements: Identify the cloud workloads that need high availability and their usage patterns
 2. Plan your architecture: Start with a Failure Mode Analysis (FMA) to identify potential failures, their implications, and recovery strategies
@@ -93,8 +88,7 @@ in a production environment
 7. Use availability sets: Create VMs within an availability set to provide high availability to your application
 8. Use zone-redundant storage: Take advantage of ZRS disks to increase availability while also reducing costs 
 
-7. If you ran out of time, how did you
-envision your finished project?
+**7. If you ran out of time, how did you envision your finished project?**
 
 If I were to envision a finished project on deploying multiple environments, it would involve a comprehensive system that seamlessly manages the entire deployment lifecycle. Here's how I would envision it:
 
@@ -106,8 +100,7 @@ If I were to envision a finished project on deploying multiple environments, it 
 6. Documentation and Collaboration: Detailed documentation and collaboration tools to facilitate communication and collaboration among team members working on different aspects of the project. This would ensure that everyone has access to up-to-date information and resources needed to contribute effectively.
 
 
-8. What is your recommendation for
-future work?
+**8. What is your recommendation for future work?**
 
 For future work on deploying multiple environments, here are some recommendations:
 
