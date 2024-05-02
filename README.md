@@ -1,9 +1,8 @@
-1. How to run the project locally using
-docker
-
+1. How to run the project locally using docker
 
 build:
 docker build . -t test -f dockerfile
+
 run:
 docker run -p 9000:8080 -it test
 
